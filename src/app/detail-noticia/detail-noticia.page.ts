@@ -11,14 +11,11 @@ export class DetailNoticiaPage implements OnInit {
   NotisDetail: any;
   detailNewList: any[]=[];
   
-  nombre: String = "";
-  tamano: String = "";
-  categoria: String = "";
-  habilidad: String = "";
-  url_imag: String = "";  
-  generacion: String = "";
-  peso: String = "";
-  sexo: String = "";
+  nombreCancion: String = "";
+  grupo: String = "";
+  direcionVideo: String = "";
+  direcionAudio: String = "";
+
 
   constructor(private route:Router, private router:ActivatedRoute) { }
 
@@ -28,14 +25,10 @@ export class DetailNoticiaPage implements OnInit {
     console.log(this.detailNewList);
 
     // aca abajo se llaman los objetos para que los muestre la paguina
-    this.nombre = this.detailNewList[0];
-    this.tamano = this.detailNewList[1];
-    this.categoria = this.detailNewList[2];
-    this.habilidad = this.detailNewList[3];
-    this.url_imag = this.detailNewList[4];
-    this.generacion = this.detailNewList[5];
-    this.peso = this.detailNewList[6];
-    this.sexo = this.detailNewList[7];
+    this.nombreCancion = this.detailNewList[0];
+    this.grupo = this.detailNewList[1];
+    this.direcionVideo = this.detailNewList[2];
+    this.direcionAudio = this.detailNewList[3];
   }
 
   back(){

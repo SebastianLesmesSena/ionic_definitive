@@ -2,52 +2,34 @@
     {
         "canciones": [
             {
-                "nombreCancion": "La ley y la trampa (IA cover)",
-                "grupo": "Jake IA:La ley y la trampa (IA cover)",
-                "direcionVideo": " ../../assets/videos/Jake IALa ley y la trampa (IA cover).mp4",
+                "nombreCancion": "Bersek",
+                "grupo": "Gore",
+                "direcionVideo": " ../../assets/videos/y2mate.com - BERSERK x Courtesy CallAMV_360p.mp4",
                 "direcionAudio": "../../assets/music/Jake IALa ley y la trampa (IA cover).mp3"
             },
             {
-                "nombreCancion": "Smooth Criminal",
-                "grupo": "Michael Jackson",
-                "direcionVideo": "../../assets/videos/Michael Jackson - Smooth Criminal (Single Version) SD Widescreen.mp4",
+                "nombreCancion": "Levi",
+                "grupo": "Gore",
+                "direcionVideo": "../../assets/videos/y2mate.com - Levi vs Beast TitanAMV Courtesy Call_480p.mp4",
                 "direcionAudio": "../../assets/music/Michael Jackson - Smooth Criminal (Official Video).mp3"
             },
             {
-                "nombreCancion": "Katyusha",
-                "grupo": "Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!",
-                "direcionVideo": "../../assets/videos/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp4",
+                "nombreCancion": "Pecados",
+                "grupo": "Shonet",
+                "direcionVideo": "../../assets/videos/y2mate.com - Meliodas Demon AMV  Courtesy Call_480p.mp4",
                 "direcionAudio": "../../assets/music/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp3"
             },
             {
-                "nombreCancion": "Rush E",
-                "grupo": "Rush E - Sheet Music Boss - Piano Stage",
-                "direcionVideo": "../../assets/videos/🕒 Rush E - Sheet Music Boss - Piano Stage.mp4",
+                "nombreCancion": "Mortal Kombat",
+                "grupo": "Gore",
+                "direcionVideo": "../../assets/videos//y2mate.com - MORTAL KOMBAT 1 tráiler oficial en español_480p.mp4",
                 "direcionAudio": "../../assets/music/Rush E but played by a real person.mp3"
             },
             {
-                "nombreCancion": "Odiame",
-                "grupo": "Julio Jaramillo",
-                "direcionVideo": "../../assets/videos/Ódiame.mp4",
+                "nombreCancion": "Plunderer",
+                "grupo": "Fantasia",
+                "direcionVideo": "../../assets/videos/y2mate.com - Plunderer AMV  Courtesy Call_480p.mp4",
                 "direcionAudio": "../../assets/music/Ódiame.mp3"
-            },
-            {
-                "nombreCancion": "Monster",
-                "grupo": "Skillet",
-                "direcionVideo": "../../assets/videos/Skillet - Monster (Official Video).mp4",
-                "direcionAudio": "../../assets/music/Skillet - Monster (Official Video).mp3"
-            },
-            {
-                "nombreCancion": "Feel Invincible",
-                "grupo": "Skillet",
-                "direcionVideo": "../../assets/videos/Skillet -  Feel Invincible  [Official Music Video].mp4",
-                "direcionAudio": "../../assets/music/Skillet -  Feel Invincible  [Official Music Video].mp3"
-            },
-            {
-                "nombreCancion": "Zombie Prostitute",
-                "grupo": "Cortos Subtitulados",
-                "direcionVideo": "../../assets/videos/The Fifth One Zombie Prostitute (Subtitulado en español) Fan Animated.mp4",
-                "direcionAudio": "../../assets/music/The Fifth One Zombie Prostitute (Subtitulado en español) Fan Animated.mp3"
             }
         ]             
     }

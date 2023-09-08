@@ -13,27 +13,27 @@
       <div >
         <ion-card>
           <ion-item>
-            <h3>{{nombre}}</h3>
+            <h3>{{nombreCancion}}</h3>
             <span slot="end" (click)="back()"><ion-icon name="arrow-back-outline"></ion-icon></span>
           </ion-item>
           
-          <img alt="Silhouette of mountains" src={{url_imag}} />
   
           <ion-card-header>
             <ion-toolbar>
-              <span><h1>Nombre:  {{nombre}}</h1></span>  
+              <span><h1>Nombre:  {{nombreCancion}}</h1></span>  
             </ion-toolbar>
           </ion-card-header>
         
           <ion-card-content>
-            <span> Tamaño: {{tamano}}</span> <br>
-            <span> Categoria: {{categoria}}</span> <br>
-            <span> Habilidad: {{habilidad}}</span> <br>
-            <span> Generacion: {{generacion}}</span> <br>
-            <span> Peso: {{peso}}</span> <br>
-            <span> Sexo: {{sexo}}</span> <br>
+            <H3>{{grupo}}</H3>
           </ion-card-content>
           
+          <ion-col size="6">
+            <video controls width="450px" height="auto"><source src="{{direcionVideo}}"></video>
+            <br>
+          </ion-col>
+          <audio controls><source src="{{direcionAudio}}"></audio>
+
         </ion-card>
       </div>
   </ion-item>
