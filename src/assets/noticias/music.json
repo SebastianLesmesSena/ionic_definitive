@@ -4,49 +4,49 @@
             {
                 "nombreCancion": "La ley y la trampa (IA cover)",
                 "grupo": "Jake IA:La ley y la trampa (IA cover)",
-                "url_video": " https://youtu.be/j_gPAn_dEZU?feature=shared",
+                "direcionVideo": " ../../assets/videos/Jake IALa ley y la trampa (IA cover).mp4",
                 "direcionAudio": "../../assets/music/Jake IALa ley y la trampa (IA cover).mp3"
             },
             {
                 "nombreCancion": "Smooth Criminal",
                 "grupo": "Michael Jackson",
-                "url_video": "https://youtu.be/T7PL3rmUhDI?feature=shared",
+                "direcionVideo": "../../assets/videos/Michael Jackson - Smooth Criminal (Single Version) SD Widescreen.mp4",
                 "direcionAudio": "../../assets/music/Michael Jackson - Smooth Criminal (Official Video).mp3"
             },
             {
                 "nombreCancion": "Katyusha",
                 "grupo": "Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!",
-                "url_video": "https://youtu.be/8oLDY_sgXjU?feature=shared",
+                "direcionVideo": "../../assets/videos/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp4",
                 "direcionAudio": "../../assets/music/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp3"
             },
             {
                 "nombreCancion": "Rush E",
                 "grupo": "Rush E - Sheet Music Boss - Piano Stage",
-                "url_video": "https://youtu.be/fox_5DQ8Hz8?feature=shared",
+                "direcionVideo": "../../assets/videos/🕒 Rush E - Sheet Music Boss - Piano Stage.mp4",
                 "direcionAudio": "../../assets/music/Rush E but played by a real person.mp3"
             },
             {
                 "nombreCancion": "Odiame",
                 "grupo": "Julio Jaramillo",
-                "url_video": "https://youtu.be/Mq6H7QuiG-8?feature=shared",
+                "direcionVideo": "../../assets/videos/Ódiame.mp4",
                 "direcionAudio": "../../assets/music/Ódiame.mp3"
             },
             {
                 "nombreCancion": "Monster",
                 "grupo": "Skillet",
-                "url_video": "https://youtu.be/1mjlM_RnsVE?feature=shared",
+                "direcionVideo": "../../assets/videos/Skillet - Monster (Official Video).mp4",
                 "direcionAudio": "../../assets/music/Skillet - Monster (Official Video).mp3"
             },
             {
                 "nombreCancion": "Feel Invincible",
                 "grupo": "Skillet",
-                "url_video": "https://youtu.be/Qzw6A2WC5Qo?feature=shared",
+                "direcionVideo": "../../assets/videos/Skillet -  Feel Invincible  [Official Music Video].mp4",
                 "direcionAudio": "../../assets/music/Skillet -  Feel Invincible  [Official Music Video].mp3"
             },
             {
                 "nombreCancion": "Zombie Prostitute",
                 "grupo": "Cortos Subtitulados",
-                "url_video": "https://youtu.be/Bv2-RGbKYNs?feature=shared",
+                "direcionVideo": "../../assets/videos/The Fifth One Zombie Prostitute (Subtitulado en español) Fan Animated.mp4",
                 "direcionAudio": "../../assets/music/The Fifth One Zombie Prostitute (Subtitulado en español) Fan Animated.mp3"
             }
         ]             

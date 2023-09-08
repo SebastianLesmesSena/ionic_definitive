@@ -10,6 +10,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class HomePage implements OnInit {
 
+  videoHtml: string='';
+
   /* Aca estan las variables de los pokemones */
   listCategorys: any[] = [];
   listPokemones: any[] = [];
