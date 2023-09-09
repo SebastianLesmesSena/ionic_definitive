@@ -15,5 +15,7 @@ export class AppComponent {
   irHome(){
     this.router.navigate(['./home'])
   }
-  
+  irListMusic(){
+    this.router.navigate(['./list-music'])
+  }
 }

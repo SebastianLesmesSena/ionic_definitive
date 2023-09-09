@@ -11,19 +11,26 @@
   
     <div id="formulario">
       <form (ngSubmit)="login()">
-        <ion-item>
-          <ion-label position="floating">Usuario:</ion-label>
-          <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
-        </ion-item>
-  
-        <ion-item>
-          <ion-label position="floating">Contraseña:</ion-label>
-          <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
-        </ion-item>
-  
-        <ion-button type="submit"> Iniciar sesión </ion-button>
+        <ion-card>
+          <div id="login">LOGIN</div>
+          <ion-card-header>
+            <ion-item>
+              <ion-label position="floating">Usuario:</ion-label>
+              <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+            </ion-item>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Contraseña:</ion-label>
+              <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+            </ion-item>
+          </ion-card-content>
+          <div id="Ingresar">
+            <ion-button type="submit"> Ingresar </ion-button>
+          </div>
+        </ion-card>        
       </form>
     </div>
 
 </ion-content>
-

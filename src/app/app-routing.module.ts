@@ -24,12 +24,12 @@ const routes: Routes = [
     loadChildren: () => import('./formulario/formulario.module').then( m => m.FormularioPageModule)
   },
   {
-    path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
-  },
-  {
     path: 'detalle-photo',
     loadChildren: () => import('./detalle-photo/detalle-photo.module').then( m => m.DetallePhotoPageModule)
+  },
+  {
+    path: 'list-music',
+    loadChildren: () => import('./list-music/list-music.module').then( m => m.ListMusicPageModule)
   }
 ];
 

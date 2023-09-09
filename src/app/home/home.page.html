@@ -3,66 +3,18 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>NOMBRE AGREGAR</ion-title>
+    <ion-title>Paguina prinsipal</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true" >
-  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterPokemones(searchTerm)"></ion-searchbar>
-
- <ion-list>
-  <ion-item lines="">
-    <div class="ion-text-center">
-      <ion-title color="success">NOMBRE AGREGAR</ion-title>
-    </div>
-
-  </ion-item>
-  <ion-item lines="none">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-card *ngFor="let notis of listvideos" (click)="navigate(notis)">
-            <ion-card-content>
-              <ion-grid fixed >
-
-                <ion-row >
-                  
-                  <ion-col size="6">
-                    <video controls width="450px" height="auto"><source src="{{notis.direcionVideo}}"></video>
-                    <br>
-                    <audio controls><source src="{{notis.direcionAudio}}"></audio>
-                  </ion-col>
-
-                  <ion-col size="6">
-                    <ion-text color="primary">
-                      <h2>{{notis.nombreCancion}}
-                        <br>
-                        {{notis.grupo}}
-                      </h2>
-                    </ion-text>
-                  </ion-col>
-                  
-                </ion-row>
-
-              </ion-grid>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    
-  </ion-item>
- </ion-list>
+  
 
  <ion-card *ngIf="receivedImageSource !== undefined">
   <img *ngIf="receivedImageSource" [src]="receivedImageSource" />
 
-  <ion-card-header>
-    <ion-card-title>{{ receivedTitulo }}</ion-card-title>
-  </ion-card-header>
+    {{ receivedTitulo }}
 
-  <ion-card-content *ngIf="receivedDescripcion">
     {{receivedDescripcion}}
-  </ion-card-content>
 
   <div *ngIf="reciveSelectedRating !== 0">
     <h5>Calificación: <ion-icon slot="end" *ngFor="let _ of getStarsArray(reciveSelectedRating)" name="star-sharp"></ion-icon></h5>  
@@ -74,15 +26,43 @@
   
 </ion-card>
 
+<ion-grid [fixed]="true">
+  <ion-row>
+    <ion-col>
+
+      <ion-tab-button tab="radio" (click)="irFormulario()">
+        <ion-icon name="camera-outline"></ion-icon>
+        Tomar Foto
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col>
+
+      <ion-tab-button tab="radio" (click)="irListMusic()">
+        <ion-icon name="musical-note-outline"></ion-icon>
+        lista musica
+      </ion-tab-button>
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+
+      <ion-tab-button tab="radio" (click)="irListMusic()">
+        <ion-icon name="clipboard-outline"></ion-icon>
+        Registrar
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col>
+
+      <ion-tab-button tab="radio" (click)="irListMusic()">
+        <ion-icon name="apps-outline"></ion-icon>
+        pokemones
+      </ion-tab-button>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
 </ion-content>
-
-<ion-footer>
-<ion-tab-bar slot="bottom">
-
-  <ion-tab-button tab="radio" (click)="irFormulario()">
-    <ion-icon name="camera-outline"></ion-icon>
-    Tomar Foto
-  </ion-tab-button>
-  
-</ion-tab-bar>
-</ion-footer>

@@ -10,12 +10,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class HomePage implements OnInit {
 
-  /* Aca estan las variables de los pokemones */
-
-  listvideos: any[] = [];
-  listvideosOriginal: any[] =[];
-  searchTerm: string = ''; // Define la barra de busqueda para los pokemones
-
   /* Aca estan las variables de la camara */
   receivedImageSource: any;
   receivedTitulo: string = '';
@@ -25,19 +19,7 @@ export class HomePage implements OnInit {
 
   constructor(public http: HttpClient, private router: Router, private route: ActivatedRoute) {}
 
-  navigate(value: any) {
-    let id = JSON.stringify(value);
-    this.router.navigate(['./detail-noticia', { id }]);
-    localStorage.setItem('NotisDetail', JSON.stringify(value));
-  }
-
   ngOnInit() {
-    /* Aca se resiven las variables de pokemon */
-    this.http.get('../../assets/noticias/music.json').subscribe(data => {
-      this.listvideos = JSON.parse(JSON.stringify(data))[0].canciones;
-      this.listvideosOriginal = JSON.parse(JSON.stringify(data))[0].canciones;
-    });
-
     /*Aca se reciven las variables de la camara */
     this.route.queryParams.subscribe((params) => {
       this.receivedImageSource = params['imageSource'];
@@ -46,23 +28,6 @@ export class HomePage implements OnInit {
       this.reciveSelectedRating = params['calificacion'];
       this.reciveCoordinates = params ['direction'];
     });
-  }
-
-
-
-
-  // Método para filtrar los pokemones
-  filterPokemones(searchTerm: string): void {
-    if (!searchTerm.trim()) {
-      // Si el término de búsqueda está vacío, muestra todas las tarjetas nuevamente.
-      this.listvideos = this.listvideosOriginal; 
-    } else {
-      // Filtra los pokemones que coincidan con el término de búsqueda.
-      this.listvideos = this.listvideosOriginal.filter(pokemon =>
-        pokemon.nombreCancion.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pokemon.grupo.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
   }
 
   /* Aca esta el funcionamiento de la camara */
@@ -92,6 +57,7 @@ export class HomePage implements OnInit {
     this.reciveSelectedRating = 0;
   }
   
+  irListMusic(){this.router.navigate(['./list-music'])}
   irFormulario(){ this.router.navigate(['./formulario'])};
   salir() {    this.router.navigate(['./login'])};
 }
