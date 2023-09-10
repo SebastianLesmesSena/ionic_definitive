@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title slot="start">Pokemones</ion-title>
+    <ion-button (click)="back()" slot="end">volver</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item lines="">
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col>
+          <div class="ion-text-center">
+            <ion-title color="success">Lista de Audio</ion-title>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+
+  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterPokemones(searchTerm)"></ion-searchbar>
+
+  <ion-list>
+    <ion-item lines="none">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card *ngFor="let notis of listPokemones" (click)="navigate(notis)">
+              <ion-card-content>
+                <ion-grid fixed >
+
+                  <ion-row >
+                    
+                    <ion-col size="6">
+                      <img src={{notis.url_imag}} alt="img">
+                    </ion-col>
+
+                    <ion-col size="6">
+                      <ion-text color="primary">
+                        <h2>{{notis.nombre}}
+                          <br>
+                          {{notis.categoria}}
+                        </h2>
+                      </ion-text>
+                    </ion-col>
+                    
+                  </ion-row>
+
+                </ion-grid>
+
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

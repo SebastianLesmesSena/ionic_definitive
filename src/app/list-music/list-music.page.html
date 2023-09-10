@@ -35,15 +35,16 @@
 
                   <ion-row >
                     
-                    <ion-col size="6">
+                    <ion-col>
                       <audio controls><source src="{{notis.direcionAudio}}"></audio>
                     </ion-col>
 
-                    <ion-col size="6">
+                    <ion-col>
                       <ion-text color="primary">
-                        <h2>{{notis.nombreCancion}}
+                        <h2>
+                          Nombre: {{notis.nombreAudio}}
                           <br>
-                          {{notis.grupo}}
+                          Grupo: {{notis.grupo}}
                         </h2>
                       </ion-text>
                     </ion-col>
@@ -84,13 +85,13 @@
 
                   <ion-row >
                     
-                    <ion-col size="6">
+                    <ion-col>
                       <video controls width="450px" height="auto"><source src="{{notis.direcionVideo}}"></video>
                     </ion-col>
 
-                    <ion-col size="6">
+                    <ion-col>
                       <ion-text color="primary">
-                        <h2>{{notis.nombreCancion}}
+                        <h2>{{notis.nombreVideo}}
                           <br>
                           {{notis.grupo}}
                         </h2>

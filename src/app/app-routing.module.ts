@@ -30,6 +30,14 @@ const routes: Routes = [
   {
     path: 'list-music',
     loadChildren: () => import('./list-music/list-music.module').then( m => m.ListMusicPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'pokemones',
+    loadChildren: () => import('./pokemones/pokemones.module').then( m => m.PokemonesPageModule)
   }
 ];
 

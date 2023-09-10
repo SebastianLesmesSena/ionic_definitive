@@ -2,28 +2,32 @@
     {
         "canciones": [
             {
-                "nombreCancion": "Bersek",
+                "nombreVideo": "Bersek",
                 "grupo": "Gore",
                 "direcionVideo": " ../../assets/videos/y2mate.com - BERSERK x Courtesy CallAMV_360p.mp4",
-                "direcionAudio": "../../assets/music/Jake IALa ley y la trampa (IA cover).mp3"
+                "direcionAudio": "../../assets/music/Jake IALa ley y la trampa (IA cover).mp3",
+                "nombreAudio": "Jake IALa ley y la trampa (IA cover)"
             },
             {
-                "nombreCancion": "Levi",
+                "nombreVideo": "Levi",
                 "grupo": "Gore",
                 "direcionVideo": "../../assets/videos/y2mate.com - Levi vs Beast TitanAMV Courtesy Call_480p.mp4",
-                "direcionAudio": "../../assets/music/Michael Jackson - Smooth Criminal (Official Video).mp3"
+                "direcionAudio": "../../assets/music/Michael Jackson - Smooth Criminal (Official Video).mp3",
+                "nombreAudio": "Smooth Criminal"
             },
             {
-                "nombreCancion": "Pecados",
+                "nombreVideo": "Katyusha",
                 "grupo": "Shonet",
-                "direcionVideo": "Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp4",
-                "direcionAudio": "../../assets/music/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp3"
+                "direcionVideo": "../../assets/videos/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp4",
+                "direcionAudio": "../../assets/music/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp3",
+                "nombreAudio": "Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні"
             },
             {
-                "nombreCancion": "Mortal Kombat",
+                "nombreVideo": "Jake IALa ley y la trampa (IA cover)",
                 "grupo": "Gore",
-                "direcionVideo": "Jake IALa ley y la trampa (IA cover).mp4",
-                "direcionAudio": "../../assets/music/Rush E but played by a real person.mp3"
+                "direcionVideo": "../../assets/videos/Jake IALa ley y la trampa (IA cover).mp4",
+                "direcionAudio": "../../assets/music/Rush E but played by a real person.mp3",
+                "nombreAudio": "Rush E"
             }
         ]             
     }

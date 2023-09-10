@@ -16,6 +16,10 @@ export class DetailNoticiaPage implements OnInit {
   direcionVideo: String = "";
   direcionAudio: String = "";
 
+  url_imag: string ="";
+  generacion: string ="";
+  peso: string ="";
+  sexo: string ="";
 
   constructor(private route:Router, private router:ActivatedRoute) { }
 
@@ -29,6 +33,10 @@ export class DetailNoticiaPage implements OnInit {
     this.grupo = this.detailNewList[1];
     this.direcionVideo = this.detailNewList[2];
     this.direcionAudio = this.detailNewList[3];
+    this.url_imag = this.detailNewList[4];
+    this.generacion = this.detailNewList[5];
+    this.peso = this.detailNewList[6];
+    this.sexo = this.detailNewList[7];
   }
 
   back(){

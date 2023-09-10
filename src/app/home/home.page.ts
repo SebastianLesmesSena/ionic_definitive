@@ -56,10 +56,11 @@ export class HomePage implements OnInit {
     this.receivedDescripcion = '';
     this.reciveSelectedRating = 0;
   }
-  
-  irListMusic(){this.router.navigate(['./list-music'])}
-  irFormulario(){ this.router.navigate(['./formulario'])};
-  salir() {    this.router.navigate(['./login'])};
+  irPokemones(){this.router.navigate(['./pokemones'])};
+  irRegistro(){this.router.navigate(['./registro'])};
+  irListMusic(){this.router.navigate(['./list-music'])};
+  irFormulario(){this.router.navigate(['./formulario'])};
+  salir() {this.router.navigate(['./login'])};
 }
 
 /*

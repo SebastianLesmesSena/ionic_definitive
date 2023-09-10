@@ -6,63 +6,72 @@
     <ion-title>Paguina prinsipal</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true" >
   
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>
 
- <ion-card *ngIf="receivedImageSource !== undefined">
-  <img *ngIf="receivedImageSource" [src]="receivedImageSource" />
+        <ion-tab-button tab="radio" (click)="irFormulario()">
+          <ion-icon name="camera-outline"></ion-icon>
+          Tomar Foto
+        </ion-tab-button>
 
-    {{ receivedTitulo }}
+      </ion-col>
+      <ion-col>
 
-    {{receivedDescripcion}}
+        <ion-tab-button tab="radio" (click)="irListMusic()">
+          <ion-icon name="musical-note-outline"></ion-icon>
+          lista musica
+        </ion-tab-button>
 
-  <div *ngIf="reciveSelectedRating !== 0">
-    <h5>Calificación: <ion-icon slot="end" *ngFor="let _ of getStarsArray(reciveSelectedRating)" name="star-sharp"></ion-icon></h5>  
-  </div>
-  
-  <ion-item>
+      </ion-col>
+    </ion-row>
+    <br><br><br>
+    <ion-row>
+      <ion-col>
+
+        <ion-tab-button tab="radio" (click)="irRegistro()">
+          <ion-icon name="clipboard-outline"></ion-icon>
+          Registrar
+        </ion-tab-button>
+
+      </ion-col>
+      <ion-col>
+
+        <ion-tab-button tab="radio" (click)="irPokemones()">
+          <ion-icon name="apps-outline"></ion-icon>
+          pokemones
+        </ion-tab-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <br><br><br><br><br><br><br><br>
+
+  <ion-card *ngIf="receivedImageSource !== undefined">
+    <div class="card-bg" *ngIf="receivedImageSource" [style.backgroundImage]="'url(' + receivedImageSource + ')'"></div>
+    
+    <div class="content-overlay">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>{{ receivedTitulo }}</h2>
+            <p>{{ receivedDescripcion }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <div *ngIf="reciveSelectedRating !== 0">
+        <h5>Calificación: <ion-icon slot="end" *ngFor="let _ of getStarsArray(reciveSelectedRating)" name="star-sharp"></ion-icon></h5>  
+      </div>
+    
       <ion-button slot="start" (click)="irDetalle()">Detalle</ion-button>
-  </ion-item>
+
+    </div>
+  </ion-card>
   
-</ion-card>
-
-<ion-grid [fixed]="true">
-  <ion-row>
-    <ion-col>
-
-      <ion-tab-button tab="radio" (click)="irFormulario()">
-        <ion-icon name="camera-outline"></ion-icon>
-        Tomar Foto
-      </ion-tab-button>
-
-    </ion-col>
-    <ion-col>
-
-      <ion-tab-button tab="radio" (click)="irListMusic()">
-        <ion-icon name="musical-note-outline"></ion-icon>
-        lista musica
-      </ion-tab-button>
-
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-
-      <ion-tab-button tab="radio" (click)="irListMusic()">
-        <ion-icon name="clipboard-outline"></ion-icon>
-        Registrar
-      </ion-tab-button>
-
-    </ion-col>
-    <ion-col>
-
-      <ion-tab-button tab="radio" (click)="irListMusic()">
-        <ion-icon name="apps-outline"></ion-icon>
-        pokemones
-      </ion-tab-button>
-
-    </ion-col>
-  </ion-row>
-</ion-grid>
 
 </ion-content>
