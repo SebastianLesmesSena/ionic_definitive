@@ -38,7 +38,8 @@ export class ListMusicPage implements OnInit {
     } else {
       // Filtra los pokemones que coincidan con el término de búsqueda.
       this.listvideos = this.listvideosOriginal.filter(pokemon =>
-        pokemon.nombreCancion.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        pokemon.nombreVideo.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        pokemon.nombreAudio.toLowerCase().includes(searchTerm.toLowerCase()) ||
         pokemon.grupo.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
