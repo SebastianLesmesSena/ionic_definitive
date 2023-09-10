@@ -26,6 +26,7 @@ export class PokemonesPage implements OnInit {
     /* Aca se resiven las variables de pokemon */
     this.http.get('../../assets/noticias/pokemones.json').subscribe(data => {
       this.listPokemones = JSON.parse(JSON.stringify(data))[0].detailPokemones;
+      this.listPokemonesOriginal = JSON.parse(JSON.stringify(data))[0].detailPokemones;
     });
   }
 
@@ -37,8 +38,8 @@ export class PokemonesPage implements OnInit {
     } else {
       // Filtra los auidios y videos que coincidan con el término de búsqueda.
       this.listPokemones = this.listPokemonesOriginal.filter(pokemon =>
-        pokemon.nombreCancion.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pokemon.grupo.toLowerCase().includes(searchTerm.toLowerCase())
+        pokemon.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        pokemon.categoria.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
   }
