@@ -1,0 +1,30 @@
+ion-content{
+    --background: orangered;
+}
+
+.content {
+    position: relative;
+    overflow: hidden; /* Para evitar que la imagen de fondo se desplace cuando el contenido aumenta */
+}
+  
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
+}
+
+ion-title {
+    color: orangered;
+}
+
+#camera{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid white; /* Agregar borde blanco de 2px */
+}

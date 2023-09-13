@@ -15,7 +15,6 @@ export class HomePage implements OnInit {
   receivedTitulo: string = '';
   receivedDescripcion: string = '';
   reciveSelectedRating: number = 0;
-  reciveCoordinates: string = '';
 
   constructor(public http: HttpClient, private router: Router, private route: ActivatedRoute) {}
 
@@ -26,7 +25,6 @@ export class HomePage implements OnInit {
       this.receivedTitulo = params['titulo'];
       this.receivedDescripcion = params['Descripcion'];
       this.reciveSelectedRating = params['calificacion'];
-      this.reciveCoordinates = params ['direction'];
     });
   }
 
@@ -45,17 +43,12 @@ export class HomePage implements OnInit {
     this.reciveSelectedRating = selectedValue;
   }
   getStarsArray(rating: number): number[] {
-    const starsArray = new Array(Math.max(1, rating));
+    const starsArray = new Array(Math.max(0, rating));
     console.log('Stars Array:', starsArray);
     return starsArray;
   }
 
-  limpiar(){
-    this.receivedImageSource = '';
-    this.receivedTitulo = '';
-    this.receivedDescripcion = '';
-    this.reciveSelectedRating = 0;
-  }
+  /*Aca se enruta a las paguinas adicionales */
   irPokemones(){this.router.navigate(['./pokemones'])};
   irRegistro(){this.router.navigate(['./registro'])};
   irListMusic(){this.router.navigate(['./list-music'])};

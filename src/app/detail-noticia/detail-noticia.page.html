@@ -1,13 +1,6 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Detalle del contenido</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="content">
 
-<ion-content [fullscreen]="true">
+  <img src="../../assets/icon/fondo.png" alt="" class="background">
   
   <ion-item *ngIf="sexo === undefined || sexo === null">
     <div >
@@ -32,37 +25,32 @@
           <br>
         </ion-col>
         <audio controls><source src="{{direcionAudio}}"></audio>
-
       </ion-card>
     </div>
   </ion-item>
 
-  <ion-item *ngIf="sexo !== undefined && sexo !== null">
-    <div >
-      <ion-card >
-        <ion-item>
-          <h3>{{nombreCancion}}</h3>
-          <span slot="end" (click)="back()"><ion-icon name="arrow-back-outline"></ion-icon></span>
-        </ion-item>
-        
-        <ion-card-header>
-          <ion-toolbar>
-            <span><h1>Nombre:  {{nombreCancion}}</h1></span>  
-          </ion-toolbar>
-        </ion-card-header>
-      
-        <ion-col size="6">
-          <img src="{{url_imag}}" alt="">
-          <br>
-        </ion-col>
+  <ion-card *ngIf="sexo !== undefined && sexo !== null">
+    <ion-item>
+      <h3>{{nombreCancion}}</h3>
+      <span slot="end" (click)="back()"><ion-icon name="arrow-back-outline"></ion-icon></span>
+    </ion-item>
+    
+    <ion-card-header>
+      <ion-toolbar>
+        <span><h1>Nombre:  {{nombreCancion}}</h1></span>  
+      </ion-toolbar>
+    </ion-card-header>
+  
+    <ion-col size="6">
+      <img src="{{url_imag}}" alt="">
+      <br>
+    </ion-col>
 
-        <H3>Altura: {{grupo}}</H3>
-        <h3>Habilidad: {{direcionAudio}}</h3>
-        <h3>Generacion: {{generacion}}</h3>
-        <h3>Peso: {{peso}}</h3>
-        <h3>Sexo: {{sexo}}</h3>
-      </ion-card>
-    </div>
-  </ion-item>
+    <H3>Altura: {{grupo}}</H3>
+    <h3>Habilidad: {{direcionAudio}}</h3>
+    <h3>Generacion: {{generacion}}</h3>
+    <h3>Peso: {{peso}}</h3>
+    <h3>Sexo: {{sexo}}</h3>
+  </ion-card>
 
 </ion-content>

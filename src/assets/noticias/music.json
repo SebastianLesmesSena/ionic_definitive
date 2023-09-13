@@ -1,33 +1,38 @@
 [
     {
-        "canciones": [
+        "audios": [
             {
-                "nombreVideo": "Bersek",
-                "grupo": "Gore",
-                "direcionVideo": " ../../assets/videos/y2mate.com - BERSERK x Courtesy CallAMV_360p.mp4",
                 "direcionAudio": "../../assets/music/Jake IALa ley y la trampa (IA cover).mp3",
                 "nombreAudio": "Jake IALa ley y la trampa (IA cover)"
             },
             {
-                "nombreVideo": "Levi",
-                "grupo": "Gore",
-                "direcionVideo": "../../assets/videos/y2mate.com - Levi vs Beast TitanAMV Courtesy Call_480p.mp4",
                 "direcionAudio": "../../assets/music/Michael Jackson - Smooth Criminal (Official Video).mp3",
                 "nombreAudio": "Smooth Criminal"
             },
             {
-                "nombreVideo": "Katyusha",
-                "grupo": "Shonet",
-                "direcionVideo": "../../assets/videos/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp4",
+
                 "direcionAudio": "../../assets/music/Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні!.mp3",
-                "nombreAudio": "Katyusha (Girls Und Panzer) Multi-Languages Lyrics Слава Україні"
+                "nombreAudio": "Katyusha / Слава Україні"
             },
             {
-                "nombreVideo": "Jake IALa ley y la trampa (IA cover)",
-                "grupo": "Gore",
-                "direcionVideo": "../../assets/videos/Jake IALa ley y la trampa (IA cover).mp4",
                 "direcionAudio": "../../assets/music/Rush E but played by a real person.mp3",
                 "nombreAudio": "Rush E"
+            },
+            {
+                "direcionAudio": "../../assets/music/Odiame.mp3",
+                "nombreAudio": "Ódiame"
+            },
+            {
+                "direcionAudio": "../../assets/music/Skillet -  Feel Invincible  [Official Music Video].mp3",
+                "nombreAudio": "Feel Invincible"
+            },
+            {
+                "direcionAudio": "../../assets/music/Skillet - Monster (Official Video).mp3",
+                "nombreAudio": "Monster"
+            },
+            {
+                "direcionAudio": "../../assets/music/The Fifth One Zombie Prostitute (Subtitulado en español) Fan Animated.mp3",
+                "nombreAudio": "Zombie Prostitute"
             }
         ]             
     }

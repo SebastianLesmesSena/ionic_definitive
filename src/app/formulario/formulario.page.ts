@@ -21,9 +21,9 @@ export class FormularioPage implements OnInit {
 
   back(){this.router.navigate(['/home'], {
       queryParams: {
-        imageSource: '',
-        titulo: '',
-        Descripcion: '',
+        imageSource: this.imageSource,
+        titulo: this.titulo,
+        Descripcion: this.Descripcion,
       },
     }); 
   }

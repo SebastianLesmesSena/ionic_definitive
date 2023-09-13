@@ -1,7 +1,3 @@
-ion-content {
-    --background: url('https://img.freepik.com/fotos-premium/cueva-cristal-neon_161488-405.jpg?w=826') no-repeat center center / cover;
-  }  
-
 #formulario {
     margin: auto;
     margin-top: 25%;
@@ -35,5 +31,17 @@ ion-content {
     color: white;
 }
 
-
-
+/* Aca se esita imagen de fondo*/
+.content {
+    position: relative;
+    overflow: hidden; /* Para evitar que la imagen de fondo se desplace cuando el contenido aumenta */
+}
+  
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
+}

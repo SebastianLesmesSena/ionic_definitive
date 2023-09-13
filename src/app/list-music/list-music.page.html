@@ -1,15 +1,5 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>lista Musica</ion-title>
-    <ion-button (click)="back()" slot="end">volver</ion-button>
-  </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true" >
+<ion-content [fullscreen]="true" class="content">
 
-  <ion-item lines="">
     <ion-grid [fixed]="true">
       <ion-row>
         <ion-col>
@@ -19,49 +9,28 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-  </ion-item>
 
   <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterPokemones(searchTerm)"></ion-searchbar>
 
-  <ion-list>
-    <ion-item lines="none">
+  <ion-card *ngFor="let notis of listvideos" (click)="navigate(notis)">
+    <ion-card-content>
+      <ion-row>
+      <ion-col>
+        <audio controls><source src="{{notis.direcionAudio}}"></audio>
+      </ion-col>
 
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-card *ngFor="let notis of listvideos" (click)="navigate(notis)">
-              <ion-card-content>
-                <ion-grid fixed >
+      <ion-col>
+        <ion-text color="primary">
+          <h2>
+            Nombre: {{notis.nombreAudio}}
+          </h2>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+          
+    </ion-card-content>
+  </ion-card>
 
-                  <ion-row >
-                    
-                    <ion-col>
-                      <audio controls><source src="{{notis.direcionAudio}}"></audio>
-                    </ion-col>
-
-                    <ion-col>
-                      <ion-text color="primary">
-                        <h2>
-                          Nombre: {{notis.nombreAudio}}
-                          <br>
-                          Grupo: {{notis.grupo}}
-                        </h2>
-                      </ion-text>
-                    </ion-col>
-                    
-                  </ion-row>
-
-                </ion-grid>
-
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-  </ion-list>
-
-  <ion-item lines="">
     <ion-grid [fixed]="true">
       <ion-row>
         <ion-col>
@@ -71,42 +40,26 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-  </ion-item>
-
-  <ion-list>
-    <ion-item lines="none">
-
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-card *ngFor="let notis of listvideos" (click)="navigate(notis)">
-              <ion-card-content>
-                <ion-grid fixed >
-
-                  <ion-row >
-                    
-                    <ion-col>
-                      <video controls width="450px" height="auto"><source src="{{notis.direcionVideo}}"></video>
-                    </ion-col>
-
-                    <ion-col>
-                      <ion-text color="primary">
-                        <h2>{{notis.nombreVideo}}
-                          <br>
-                          {{notis.grupo}}
-                        </h2>
-                      </ion-text>
-                    </ion-col>
-                    
-                  </ion-row>
-
-                </ion-grid>
-
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-  </ion-list>
+    
+  <ion-grid [fixed]="true">
+    <ion-row>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/UcaeFC17Mcs?si=b8uhSZjYaaqPdSrX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; speaker" allowfullscreen></iframe><br>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/nxln4vi3J5E?si=q06h6DS0NCLHyLlh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; speaker" allowfullscreen></iframe><br>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/KheI_qHGT1o?si=qcjOta51MR9s58Uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; speaker" allowfullscreen></iframe><br>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/thkUBV--80Y?si=oRri_X_D6jR7cvFj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; speaker" allowfullscreen></iframe><br>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/14SzfLg37Uk?si=_GfPgoB-9BGm8bP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; speaker" allowfullscreen></iframe><br>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/vzTKaM-rd3g?si=m-3iQWbeLQtRBipZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; speaker" allowfullscreen></iframe><br>
+      </ion-row>
+  </ion-grid>
+  
 </ion-content>
+
+<ion-footer>
+  <div id="footer">
+    <ion-toolbar color="warning">
+      <div class="ion-text-center">
+        <ion-icon name="volume-high-outline" (click)="back()"></ion-icon><br>
+      </div>
+    </ion-toolbar>
+  </div>
+</ion-footer>

@@ -1,57 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Paguina prinsipal</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="content">
 
-<ion-content [fullscreen]="true" >
+  <img src="../../assets/icon/fondo.png" alt="" class="background">
   
   <ion-grid [fixed]="true">
     <ion-row>
       <ion-col>
 
-        <ion-tab-button tab="radio" (click)="irFormulario()">
-          <ion-icon name="camera-outline"></ion-icon>
-          Tomar Foto
-        </ion-tab-button>
+        <div id="fondox" (click)="irFormulario()">
+          <ion-tab-button class="custom-tab-button">
+            <ion-icon name="camera-outline"></ion-icon>
+            Tomar Foto
+          </ion-tab-button>
+        </div>
 
       </ion-col>
       <ion-col>
 
-        <ion-tab-button tab="radio" (click)="irListMusic()">
-          <ion-icon name="musical-note-outline"></ion-icon>
-          lista musica
-        </ion-tab-button>
+        <div id="fondox" (click)="irListMusic()">
+          <ion-tab-button tab="radio" class="custom-tab-button">
+            <ion-icon name="musical-note-outline"></ion-icon>
+            Lista musica
+          </ion-tab-button>
+        </div>
 
       </ion-col>
     </ion-row>
-    <br><br><br>
+
     <ion-row>
       <ion-col>
 
-        <ion-tab-button tab="radio" (click)="irRegistro()">
-          <ion-icon name="clipboard-outline"></ion-icon>
-          Registrar
-        </ion-tab-button>
+        <div id="fondox" (click)="irRegistro()">
+          <ion-tab-button tab="radio" class="custom-tab-button">
+            <ion-icon name="clipboard-outline"></ion-icon>
+            Registrar
+          </ion-tab-button>
+        </div>
 
       </ion-col>
       <ion-col>
 
-        <ion-tab-button tab="radio" (click)="irPokemones()">
-          <ion-icon name="apps-outline"></ion-icon>
-          pokemones
-        </ion-tab-button>
+        <div id="fondox" (click)="irPokemones()">
+          <ion-tab-button tab="radio"  class="custom-tab-button">
+            <ion-icon name="apps-outline"></ion-icon>
+            Pokemones
+          </ion-tab-button>
+        </div>
 
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br>
+
+    <ion-grid [fixed]="true" *ngIf="receivedImageSource !== undefined">
+      <ion-row>
+        <ion-col>
+          <div class="ion-text-center">
+            <ion-title>Fotos</ion-title>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
   <ion-card *ngIf="receivedImageSource !== undefined">
+
     <div class="card-bg" *ngIf="receivedImageSource" [style.backgroundImage]="'url(' + receivedImageSource + ')'"></div>
     
     <div class="content-overlay">
@@ -69,9 +81,17 @@
       </div>
     
       <ion-button slot="start" (click)="irDetalle()">Calificar</ion-button>
-
     </div>
   </ion-card>
   
-
 </ion-content>
+
+<ion-footer>
+  <div id="footer">
+    <ion-toolbar color="warning">
+      <div class="ion-text-center">
+        <ion-icon name="log-out-outline" (click)="salir()" id="camera"></ion-icon><br>
+      </div>
+    </ion-toolbar>
+  </div>
+</ion-footer>

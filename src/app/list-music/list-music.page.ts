@@ -9,10 +9,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ListMusicPage implements OnInit {
 
-  /* Aca estan las variables de los pokemones */
+  /* Aca estan las variables de los audios */
   listvideos: any[] = [];
   listvideosOriginal: any[] =[];
-  searchTerm: string = ''; // Define la barra de busqueda para los pokemones
+  searchTerm: string = ''; // Define la barra de busqueda para los audios
 
   constructor(public http: HttpClient, private router: Router, private route: ActivatedRoute) { }
 
@@ -23,14 +23,14 @@ export class ListMusicPage implements OnInit {
   }
 
   ngOnInit() {
-        /* Aca se resiven las variables de pokemon */
+        /* Aca se resiven las variables de los audios */
         this.http.get('../../assets/noticias/music.json').subscribe(data => {
-          this.listvideos = JSON.parse(JSON.stringify(data))[0].canciones;
-          this.listvideosOriginal = JSON.parse(JSON.stringify(data))[0].canciones;
+          this.listvideos = JSON.parse(JSON.stringify(data))[0].audios;
+          this.listvideosOriginal = JSON.parse(JSON.stringify(data))[0].audios;
         });
   }
 
-   // Método para filtrar los pokemones
+   // Método para filtrar los audios
   filterPokemones(searchTerm: string): void {
     if (!searchTerm.trim()) {
       // Si el término de búsqueda está vacío, muestra todas las tarjetas nuevamente.
@@ -38,12 +38,9 @@ export class ListMusicPage implements OnInit {
     } else {
       // Filtra los pokemones que coincidan con el término de búsqueda.
       this.listvideos = this.listvideosOriginal.filter(pokemon =>
-        pokemon.nombreVideo.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pokemon.nombreAudio.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        pokemon.grupo.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+        pokemon.nombreAudio.toLowerCase().includes(searchTerm.toLowerCase()));
     }
   }
 
-  back(){this.router.navigate(['/home']);}
+  back(){this.router.navigate(['/home'])};
 }

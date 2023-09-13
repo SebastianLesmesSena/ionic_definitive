@@ -2,19 +2,31 @@ ion-content ion-item div ion-card ion-item span,ion-icon{
     cursor: pointer;
 }
 
-ion-content div ion-card{    /*aca se pone el cuerpo de las cartas*/}
-
 #starts{
     margin: 20px;
     text-align: center;
-}
-
-.hoverable-icon {
-    color: red; 
-    &:hover { color: aquamarine; }
 }
   
 img {
     width: 300px;
     height: auto;
+}
+
+ion-card{
+    text-align: center;
+}
+
+/* Aca se esita imagen de fondo*/
+.content {
+    position: relative;
+    overflow: hidden; /* Para evitar que la imagen de fondo se desplace cuando el contenido aumenta */
+}
+  
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
 }

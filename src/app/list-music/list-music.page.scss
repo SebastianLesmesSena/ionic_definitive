@@ -1,0 +1,34 @@
+ion-content{
+    --background: url(../../assets/icon/fondo.png);
+}
+
+iframe {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+ion-icon{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; /* Agregar borde blanco de 2px */
+}
+
+.content {
+    position: relative;
+    overflow: hidden; /* Para evitar que la imagen de fondo se desplace cuando el contenido aumenta */
+}
+  
+ion-title{
+    color:white;
+    background-color: orangered;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+ion-card{
+    border: 2px solid rgba(41, 40, 40, 0.884);
+}
